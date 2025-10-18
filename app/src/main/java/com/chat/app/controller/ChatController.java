@@ -13,9 +13,9 @@ public class ChatController {
 
     //when any msg revieve at sendmessage it will broadcast at  topic/messgaes
 
-   @MessageMapping("/sendmessage")
+   @MessageMapping("/sendMessage")
    @SendTo("/topic/messages")
-public ChatMessage sendmessage(ChatMessage message){
+public ChatMessage sendMessage(ChatMessage message){
     return message;
 }
 
